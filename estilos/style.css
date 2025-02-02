@@ -4,3 +4,50 @@
     --cor-1: #49a09d;
     --cor-2: #5f2c82;
 }
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: var(--cor-2);
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+    position: relative; /*alterou nada eu tirar isso.. rever isso de position relative dps de novo*/
+}
+
+section#login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden; /*assim ja corta a ponta da ft na margem da borda dessa div.. na vdd esconde ne kkk*/
+
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+
+section#login > div#imagem {
+    display: block;
+    background: var(--cor-2) url(../imagens/triangulos.jpg) no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    height: 200px;
+    
+}
+
+section#login > div#formulario {
+    display: block; /*rever isso do display block, pq aqui nao mudou nada visualmente, mas o prof falou q era estrategico*/
+    padding: 10px;
+}
