@@ -54,3 +54,13 @@ section#login > div#formulario {
     display: block; /*rever isso do display block, pq aqui nao mudou nada visualmente, mas o prof falou q era estrategico*/
     padding: 10px;
 }
+
+
+div#formulario > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#formulario > p {
+    font-size: 0.8em;
+}
